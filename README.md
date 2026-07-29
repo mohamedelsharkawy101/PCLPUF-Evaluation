@@ -70,25 +70,25 @@ The generated datasets are used by `NN_EVALUATION.ipynb`.
 
 1. **Generate datasets** using `NN_EVALUATED_PUFs.ipynb`.
 
-   * Manually configure the PUF architecture (e.g., challenge length, XOR stages, and other parameters) and regenerate the datasets required for the experiments presented in the paper.
+   * Manually configure the PUF architecture (e.g., challenge length, XOR stages, and other parameters) and regenerate the datasets required for the NN experiments presented in the paper.
 
 2. **Evaluate Neural Network attacks** using `NN_EVALUATION.ipynb`.
 
    * Manually load the appropriate dataset generated in the previous step and configure the desired neural network architecture and hyperparameters.
 
-3. **Run baseline Logistic Regression attacks** using `LR_attack_PCLPUF.ipynb`.
+3. **Run baseline Logistic Regression attacks on XOR and PCL-PUF** using `LR_attack_PCLPUF.ipynb`.
 
    * Manually configure the PUF architecture and training/testing dataset sizes before running the experiments.
 
-4. **Perform split attacks** using `PCLPUF_Splitting_attack.ipynb`.
+4. **Perform split attacks on iPUF and PCLPUF** using `PCLPUF_Splitting_attack.ipynb`.
 
    * Adjust the PUF configuration, dataset sizes, and attack parameters to reproduce or extend the reported split-attack experiments.
 
-5. **Record split-attack results** using `split_attack_record.py`.
+5. **Record split-attack results for PCL-PUF** using `split_attack_record.py`.
 
    * Save the upper-stage accuracy after each refinement round for subsequent analysis and visualization.
 
-6. **Evaluate reliability-based attacks** using `PCLPUF_Reliability_attack.ipynb`.
+6. **Evaluate reliability-based attacks on XOR and PCL-PUF** using `PCLPUF_Reliability_attack.ipynb`.
 
    * Configure the PUF architecture, noise level, and dataset sizes to reproduce the reliability-based experiments and analyses.
 
